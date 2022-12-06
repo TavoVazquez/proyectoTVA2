@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Edukate - Online Education Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="manifest" href="./manifest.json">
+    <script type="text/javascript">
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("sw.js");
+        }
+      </script>
+      
+    <script src="./oper.js"></script>
+</head>
+
+<body>
+    <script src="./oper.js"></script>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-right">
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>Vaquita</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="course.html" class="nav-item nav-link">Herramientas</a>
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
+        <div class="container text-center my-5 py-5">
+            <h1 class="text-white mt-4 mb-4">Sean Bienvenidos a Esta su Pagina</h1>
+            <h1 class="text-white display-1 mb-5">Vaquita</h1>
+            <button onclick="Notificacion()" class="btn btn-success mt-5 m-5" style="background-color: red;">Notificación</button>
+
+  <script>
+    Notification.requestPermission().then(perm => {
+      if (perm === 'granted') {
+        
+      }
+    });
+
+    function Notificacion() {
+      new Notification("Alerta", {
+        body: 'Bienvenido a esta tu pagina',
+        icon: 'https://igualdadanimal.mx/app/uploads/2020/07/blog-vacas-maltrato-animal-crueldad-mx-1000x0-c-default.jpg',
+        vibrate: [100, 100, 100],
+        onClick: function () {
+          window.location = "https://google.es"
+        }
+      });
+    }
+  </script>
+            <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
+                <div class="input-group">
+                    <div class="input-group-append">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/inicio.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">¿Que somos?</h6>
+                        <h1 class="display-4">Vaquita</h1>
+                    </div>
+                    <p>vaquita nos funiconara para tener un buen manejo con el ganado bovino ya que desde pequeño se nos dificultava tener un control de los animales vacunados y animales vacunados ajenos sabiendo el calculo de ello, tambien hectareas del potrero y no saber cuantas cabezas de ganado podrian mantenerse </p>
+                    <div class="row pt-3 mx-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    
+    <!-- Feature Start -->
+
+
+    <!-- Courses Start -->
+   
+    <!-- Courses End -->
+
+
+    <!-- Team Start -->
+    
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
